@@ -1,0 +1,21 @@
+#CREATE BIN BASH FILE
+vi digi_watch.sh
+
+
+#SOURCE CODE
+
+#!/bin/bash
+
+Green=$'\e[1;32m'
+
+while true
+do
+	clear
+	echo $Green $(data +%T)
+	sleep 1s
+done
+
+
+#SHOW THAT OUTPUT
+
+./digi_watch.sh
